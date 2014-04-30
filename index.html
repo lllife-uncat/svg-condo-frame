@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="http://daneden.github.io/animate.css/animate.min.css">
+        <script src="http://snapsvg.io/assets/js/snap.svg-min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+
+
+    <body>
+
+        <filter id="dropshadow" height="130%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+            <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+            <feMerge>
+                <feMergeNode/> <!-- this contains the offset blurred image -->
+                <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+            </feMerge>
+        </filter>
+
+        <div id="image"></div>
+
+        <script>
+            startup();
+        </script>
+    </body>
+</html>

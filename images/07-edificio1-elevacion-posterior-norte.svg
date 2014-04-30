@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="980"
+   height="584"
+   id="svg2">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <image
+     xlink:href="file:///home/recovery/projects/condo-frame/images/07-edificio1-elevacion-posterior-norte.gif"
+     x="0"
+     y="0"
+     width="980"
+     height="584"
+     id="image10" />
+  <text
+     x="171.87692"
+     y="137.72308"
+     id="text2987"
+     xml:space="preserve"
+     style="font-size:25px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"><tspan
+       x="171.87692"
+       y="137.72308"
+       id="tspan2989" /></text>
+  <path
+     d="m 242.73845,141.4923 -11.42103,0.61237 -5.97031,9.75554 -4.11169,-10.67282 -11.12299,-2.66348 8.87987,-7.20853 -0.90408,-11.40165 9.59975,6.2177 10.56424,-4.38314 -2.9469,11.05129 z"
+     transform="translate(8.2923081,7.5384615)"
+     id="path3235"
+     style="fill:#6d72af;fill-opacity:1" />
+  <use
+     transform="translate(161.32308,0)"
+     id="use3237"
+     x="0"
+     y="0"
+     width="980"
+     height="584"
+     xlink:href="#path3235" />
+</svg>
