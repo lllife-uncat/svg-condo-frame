@@ -1,0 +1,27 @@
+{
+  "name": "condo-frame",
+  "version": "0.0.0",
+  "description": "",
+  "main": "connect.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/somnuk-wk/condo-frame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somnuk-wk/condo-frame/issues"
+  },
+  "homepage": "https://github.com/somnuk-wk/condo-frame",
+  "dependencies": {
+    "chai": "~1.9.1",
+    "express": "~4.1.1",
+    "body-parser": "~1.0.2"
+  }
+}

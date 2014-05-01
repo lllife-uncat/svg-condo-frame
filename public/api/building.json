@@ -1,0 +1,16 @@
+{
+  "buildings": [
+    { "id": 1, "name": "B1" },
+    { "id": 2, "name": "B2" },
+    { "id": 3, "name": "B3" }
+  ],
+  "floors": [
+    { "id": 1,"building" : 1, "floor": 1, "rooms": [1,2,3] }
+  ],
+  "types": [
+    { "id": 1, "name": "Type A" }
+  ],
+  "rooms": [
+    { "id": 1, "floor": 1, "type": 1 }
+  ]
+}
