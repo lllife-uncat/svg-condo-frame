@@ -59,13 +59,36 @@ app.factory("snap", function(){
     this.style = function(snap){
       var rects = snap.selectAll("image");
       rects.forEach(function(rect){
-        rect.mousedown(mouseDown);
         appendLabel(rect);
 
         var id = rect.attr("id");
-        if(id != "plan") rect.drag();
+        if(id != "plan") {
+//           rect.drag();
+          updateIcon(rect);
+          rect.mousedown(mouseDown);
+        }
+
+        window.xrect = rect;
       });
     };
+
+    function updateIcon(rect) {
+      var sold = !rect.sold;
+      var attr = { "xlink:href" : !sold? "images/ok.png" : "images/soldout.jpg" };
+      rect.attr(attr);
+      rect.sold = sold;
+
+      var classes = ["animated", "fadeIn"];
+      var cl = classes.join(" ");
+
+      if(sold) {
+//         rect.addClasses(classes);
+//         rect.attr("class", cl);
+      }else {
+//         rect.attr("class", "x");
+//         rect.removeClasses(classes);
+      }
+    }
 
 
     /**
@@ -83,8 +106,21 @@ app.factory("snap", function(){
 
       var text = snap.text(x, y, id);
       text.attr("class", "jw-text");
-      text.attr("fill", "orange");
+      text.attr("fill", "black");
       text.drag();
+      text.insertBefore(rect);
+      text.mouseover(function(){
+        this.attr("fill", "green");
+      });
+      text.mouseout(function(){
+        this.attr("fill", "black");
+      });
+
+      var box = text.getBBox();
+      var rect = snap.rect(box.x, box.y, box.width, box.height);
+      rect.attr("fill", "white");
+      rect.insertBefore(text);
+
     }
 
     /**
@@ -95,9 +131,7 @@ app.factory("snap", function(){
       var snap = self.snap;
       var sale = !rect.sale;
 
-      var att = { fill: !sale ? "green" : "red" };
-      rect.attr(att);
-      rect.sale = sale;
+      updateIcon(rect);
 
       window.xsnap = snap;
       window.xrect = rect;
